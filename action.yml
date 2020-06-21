@@ -1,0 +1,15 @@
+name: 'Check Runs'
+description: 'Communicate with the check runs API'
+inputs:
+  github-token:
+    description: 'Your GitHub authentication token'
+    required: true
+  title:
+    description: 'Check run title'
+    required: true
+  summary:
+    description: 'Check run summary'
+    required: true
+runs:
+  using: 'node14'
+  main: 'index.js'

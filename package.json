@@ -1,0 +1,28 @@
+{
+  "name": "check-runs-action",
+  "version": "1.0.0",
+  "description": "Github action to communicate with the check runs API to create more visual actions status and feedback",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunesmatheus/check-runs-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nunesmatheus/check-runs-action/issues"
+  },
+  "homepage": "https://github.com/nunesmatheus/check-runs-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^3.0.0",
+    "axios": "^0.19.2"
+  }
+}
