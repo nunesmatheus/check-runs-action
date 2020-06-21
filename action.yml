@@ -10,6 +10,9 @@ inputs:
   summary:
     description: 'Check run summary'
     required: true
+  output-message:
+    description: 'Small message that appears on PR checks'
+    required: true
 runs:
   using: 'node14'
   main: 'index.js'

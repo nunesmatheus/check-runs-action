@@ -6,14 +6,14 @@ const repository = github.context.payload.repository.full_name
 
 const axios = require('axios');
 const data = {
-  "name": 'Test coverage',
+  "name": core.getInput('title'),
   "head_sha": head_sha,
   "status": "completed",
   "started_at": new Date(),
   "completed_at": new Date(),
   "conclusion": "success",
   "output": {
-    "title": core.getInput('title'),
+    "title": core.getInput('output-message'),
     "summary": core.getInput('summary')
   }
 }
