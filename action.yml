@@ -9,7 +9,7 @@ inputs:
     required: true
   summary:
     description: 'Check run summary'
-    required: true
+    required: false
   output-message:
     description: 'Small message that appears on PR checks'
     required: true
