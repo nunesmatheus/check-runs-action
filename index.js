@@ -1,8 +1,10 @@
 const github = require('@actions/github');
 const core = require('@actions/core');
 
-if(!github.context.payload.pull_request)
+if(!github.context.payload.pull_request) {
   core.setFailed('A pull request is required to run the action')
+  exit()
+}
 
 const head_sha = github.context.payload.pull_request.head.sha
 
