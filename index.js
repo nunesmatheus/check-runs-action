@@ -7,6 +7,7 @@ if(!github.context.payload.pull_request) {
 }
 
 const head_sha = github.context.payload.pull_request.head.sha
+const repository = github.context.payload.repository.full_name
 
 const axios = require('axios');
 const data = {
