@@ -1,8 +1,10 @@
 const github = require('@actions/github');
 const core = require('@actions/core');
 
-const head_sha = github.context.payload.pull_request?.head?.sha || github.context.sha
-const repository = github.context.payload.repository.full_name
+if(!github.context.payload.pull_request)
+  core.setFailed('A pull request is required to run the action')
+
+const head_sha = github.context.payload.pull_request.head.sha
 
 const axios = require('axios');
 const data = {
