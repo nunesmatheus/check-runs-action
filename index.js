@@ -16,7 +16,7 @@ const data = {
   "status": "completed",
   "started_at": new Date(),
   "completed_at": new Date(),
-  "conclusion": "success",
+  "conclusion": core.getInput('conclusion'),
   "output": {
     "title": core.getInput('output-message'),
     "summary": core.getInput('summary')

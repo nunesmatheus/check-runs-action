@@ -13,6 +13,10 @@ inputs:
   output-message:
     description: 'Small message that appears on PR checks'
     required: true
+  conclusion:
+    description: 'Conclusion of the check run'
+    required: false
+    default: 'success'
 runs:
   using: 'node12'
   main: 'index.js'
